@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home | Unique Walls</title>
+  <!--Sets page title -->
+  <script src="https://kit.fontawesome.com/61d2ea4399.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="images/UW_Box.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/indexStyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="imgCont">
+      <a href="#about" class="logo"><img src="images/UW_Box.png" width="200" class="image"></a>
+    </div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+  </header>
+
+
+  <!-- This for the slideshow on home page -->
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="slidesImg">
+
+        <img src="images/vans.jpg" style="width:40%;">
+      </div>
+
+
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+
+      <div class="slidesImg">
+        <img src="images/nike.jpg" style="width:40%">
+
+      </div>
+
+      <div class="text"></div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <div class="slidesImg">
+        <img src="images/supreme.jpg" style="width:40%">
+      </div>
+
+      <div class="text"></div>
+    </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+<!-- Script below is for slideshow-->
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 2 seconds
+    }
+  </script>
+  <h1 id="about">About Us</h1>
+  <p>Bacon ipsum dolor amet exercitation enim non strip steak commodo dolore, ipsum spare ribs t-bone ribeye in alcatra. Et venison tail in esse pig chicken bacon capicola incididunt landjaeger ullamco. Rump hamburger lorem t-bone short loin
+    nulla drumstick capicola pariatur pancetta. Enim ad irure chislic ribeye.
+
+  </p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <div class="rounded-social-buttons">
+      <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+
+      <a class="social-button tiktok" href="https://www.youtube.com/" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a><!-- These buttons are called from fontawesome-->
+    </div>
+    <div class="footerText">
+      <h5>Logo Designed By Melissa Degg</h5><!-- Thanks Mel!-->
+    </div>
+  </footer>
+</body>
+
+
+</html>

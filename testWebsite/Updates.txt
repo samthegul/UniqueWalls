@@ -1,0 +1,4 @@
+Update 25/01/2021:
+-New Logo (Thanks Mel!)
+-Added social media buttons to contact page
+-Cleaned up css and html and added comments to increase readability
