@@ -472,8 +472,15 @@ input[type=submit]:hover {
     border-radius: 4px;
     margin-bottom: 15%;
   }
-  .image {
-    float: middle;
-    max-width: 30%;
-    height: auto
-  }
+
+    p {
+      text-align: center;
+      color: BLACK;
+      margin: 0% 0% 0%;
+    }
+
+    .image {
+      float: middle;
+      max-width: 30%;
+      height: auto
+    }
