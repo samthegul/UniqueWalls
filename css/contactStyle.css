@@ -379,7 +379,11 @@ textarea {
 * {
   box-sizing: border-box;
 }
-
+.image {
+  float: middle;
+  max-width: 40%;
+  height: auto
+}
 /* Add styles to 'container' class */
 .container {
   padding: 12px 24px 24px 24px;
@@ -467,4 +471,9 @@ input[type=submit]:hover {
     background: #4169e1;
     border-radius: 4px;
     margin-bottom: 15%;
+  }
+  .image {
+    float: middle;
+    max-width: 30%;
+    height: auto
   }
