@@ -7,21 +7,45 @@ h1 {
   text-align: center;
   color: black;
 }
-.welcome{margin-top: 10%}
-.about{margin-top: 5%}
+
+.welcome {
+  margin-top: 10%
+}
+
+.about {
+  margin-top: 5%
+}
+
 .carousel-inner img {
   margin: auto;
 }
-.carousel { width:640px; height:360px; align-items:center;margin: auto; margin-top: 2%;background-color: #fff}
-.carouselcont{margin-top: %;background-color: #fff}
+
+.carousel {
+  width: 640px;
+  height: 360px;
+  align-items: center;
+  margin: auto;
+  margin-top: 2%;
+  background-color: #fff
+}
+
+.carouselcont {
+
+  background-color: #fff
+}
+
 p {
-font-weight: 600;
+  font-weight: 600;
   text-align: center;
   color: BLACK;
   margin: 0% 25% 0%;
   < !-- Adds margin 25% left and right of paragraphs-->
 }
-.carousel-item{background-color: #fff}
+
+.carousel-item {
+  background-color: #fff
+}
+
 div {
   text-align: center;
 }
@@ -78,7 +102,8 @@ header {
   outline: 3px solid rgba(lightblue, .75);
 }
 
-.nav-toggle-label {/*Styles for navbar toggle button*/
+.nav-toggle-label {
+  /*Styles for navbar toggle button*/
   position: absolute;
   top: 0;
   left: 0;
@@ -134,12 +159,14 @@ nav ul {
   list-style: none;
 }
 
-nav li {font-weight:bold;
+nav li {
+  font-weight: bold;
   margin-bottom: 1em;
   margin-left: 1em;
 }
 
 nav a {
+  padding: 10px;
   color: #4169e1;
   text-decoration: none;
   font-size: 1.2rem;
@@ -169,7 +196,16 @@ nav a:hover {
 .logo {
   height: 75%
 }
-
+@media screen and (max-width: 1170px) {nav a {
+  padding: 0px;
+  color: #4169e1;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+}
 @media screen and (min-width: 800px) {
   .nav-toggle-label {
     display: none;
@@ -235,7 +271,12 @@ nav a:hover {
     color: #4169e1
   }
 }
-.activePage{background-color: #4169e1; color:white}
+
+.activePage {
+  background-color: #4169e1;
+  color: white
+}
+
 .btn {
   vertical-align: middle;
   text-align: center;
@@ -272,7 +313,12 @@ footer {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.mobileBuy{display: none; margin-top: 20px}
+
+.mobileBuy {
+  display: none;
+  margin-top: 20px
+}
+
 .footerText {
   color: #fff;
   margin-top: 1%
@@ -392,54 +438,92 @@ textarea {
 }
 
 /* Slideshow container */
-@media screen and (max-width: 800px) {
 
-.carousel { width:100%; align-items:center;margin: auto; margin-top: 2%;background-color: #fff}
+@media screen and (max-width: 800px) {
+  nav a {
+    padding: 10px;
+    padding-right: 70%;
+    color: #4169e1;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+  }
+  .carousel {
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    margin-top: 2%;
+    background-color: #fff
+  }
+
   p {
     text-align: center;
     color: BLACK;
     margin: 0% 0% 0%;
   }
 
-
-.about{margin-top: 10px}
-.welcome{margin-top: 30%}
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {
-    opacity: .4
+  .about {
+    margin-top: 10px
   }
 
-  to {
-    opacity: 1
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: .4
+  .welcome {
+    margin-top: 30%
   }
 
-  to {
-    opacity: 1
+  .active {
+    background-color: #717171;
   }
-}
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {
-    font-size: 11px
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
   }
-}
-@media screen and (max-width: 480px){.welcome{margin-top:40%}}
+
+  @-webkit-keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  @keyframes fade {
+    from {
+      opacity: .4
+    }
+
+    to {
+      opacity: 1
+    }
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {
+      font-size: 11px
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .welcome {
+      margin-top: 40%
+    }
+  }
+  @media screen and (max-width: 430px){
+  nav a {
+    padding: 0px;
+    padding-right: 70%;
+    color: #4169e1;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+  }}

@@ -131,6 +131,7 @@ nav li {
 }
 
 nav a {
+  padding: 10px;
   color: #4169e1;
   text-decoration: none;
   font-size: 1.2rem;
@@ -392,16 +393,30 @@ textarea {
 }
 
 .content p {
+  text-align: center;
   color: white
 }
+@media screen and (max-width: 1170px) {nav a {
+  padding: 0px;
 
+}
+}
 @media screen and (max-width: 800px) {
 
   /* This css activates when screenwidth is less than 800 pixels wide */
   .contact {
     margin-top: 25%
   }
-
+  nav a {
+    padding: 10px;
+    padding-right: 70%;
+    color: #4169e1;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+  }
   p {
     text-align: center;
     color: BLACK;
@@ -443,3 +458,14 @@ textarea {
     margin-right: 0%
   }
 }
+@media screen and (max-width: 430px){
+nav a {
+  padding: 0px;
+  padding-right: 70%;
+  color: #4169e1;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}}

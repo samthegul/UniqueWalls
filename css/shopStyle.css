@@ -16,11 +16,6 @@ p{font-weight: 400}
 }
 .shopify {width:15%;   border: 5px solid #95bf47; border-radius: 5px; }
 .etsy{width:10%;  border: 5px solid #f45800; border-radius: 5px}
-.container{
-    width: 88vw;
-    margin: 0 auto;
-
-}
 
 .lg-title,
 .md-title,
@@ -364,6 +359,7 @@ nav li {
 }
 
 nav a {
+  padding: 10px;
   color: #4169e1;
   text-decoration: none;
   font-size: 1.2rem;
@@ -630,10 +626,24 @@ html {
 }
 .carousel { width:100%;padding: 0;align-items:center;margin: auto; margin-top: 0%;background-color: #fff;}
 .carouselcont{margin-top: 2%;background-color: #fff}
+@media screen and (max-width: 1170px) {nav a {
+  padding: 0px;
+
+}
+}
 @media screen and (max-width: 1920px) {
   .carousel { width:100%; align-items:center;margin: auto; margin-top: 2%;background-color: #fff;}}
 @media screen and (max-width: 800px) {/* This css activates when screenwidth is less than 800 pixels wide */
-.carousel { width:100%; align-items:center;margin: auto; margin-top: 2%;background-color: #fff}
+  nav a {
+    padding: 10px;
+    padding-right: 70%;
+    color: #4169e1;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+  }
   p {
     text-align: center;
     color: BLACK;
@@ -664,3 +674,14 @@ p{margin: 0% 0% 0%}
       height: auto
     }
 }
+@media screen and (max-width: 430px){
+nav a {
+  padding: 0px;
+  padding-right: 70%;
+  color: #4169e1;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}}

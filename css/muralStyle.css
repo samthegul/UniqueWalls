@@ -1,3 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root{
+    --white-light: rgba(255, 255, 255);
+    --alice-blue: #f8f9fa;
+    --carribean-green: #40c9a2;
+    --gray: #ededed;
+    --royalBlue:#4169e1;
+}
+p{font-weight: 400}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.carouselContainer{
+    width: 88vw;
+    margin: 0 auto;
+
+}
+.contactForm {
+  padding: 12px 24px 24px 24px;
+  margin: 2% 25% 0%;
+  background: #4169e1;
+  border-radius: 4px;
+  color: white
+}
+/* Add styles to 'label' selector */
+label {
+  font-size: 0.85em;
+  margin-left: 12px;
+  color: white
+}
+
+/* */
+/* Add styles to 'input' and 'textarea' selectors */
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+/* Add styles to show 'focus' of selector */
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  border: 1px solid green;
+}
+
+/* Add styles to the submit button */
+input[type=submit] {
+  color: #4169e1;
+  background: #FFFF;
+  margin: 0 auto;
+  outline: 0;
+  border: 0;
+  padding: 12px 24px;
+  border-radius: 4px;
+  transition: all ease-in-out 0.1s;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Add styles for 'focus' property */
+input[type=submit]:focus {
+  background: #4169e1;
+  color: whitesmoke;
+}
+
+/* Style 'hover' property */
+input[type=submit]:hover {
+  background: #2196F3;
+  color: white
+}
+
+
 body {
   background-color: #FFF;
   < !-- Sets background color to white-->
@@ -6,13 +88,10 @@ body {
 h1 {
   text-align: center;
   color: black;
-  padding-top: 2%;
-  font-size: 2.5rem;
+  padding-top: 10%;
 }
-.activePage{background-color: #4169e1; color:white}
 
 p {
-font-weight: 600;
   text-align: center;
   color: BLACK;
   margin: 0% 25% 0%;
@@ -30,9 +109,15 @@ div {
   font-family: 'Roboto', sans-serif;
 }
 
-iframe {
-  float: middle
+.about {
+  text-align: center;
+  padding: 18px;
+  margin-top: 100px;
+  text-color: white;
+  font-size: 20px;
 }
+
+
 
 :root {
   --background: #FFF;
@@ -71,8 +156,7 @@ header {
   outline: 3px solid rgba(lightblue, .75);
 }
 
-.nav-toggle-label {
-  /*Styles for navbar toggle button*/
+.nav-toggle-label {/*Styles for navbar toggle button*/
   position: absolute;
   top: 0;
   left: 0;
@@ -123,12 +207,13 @@ nav {
 }
 
 nav ul {
+
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-nav li {font-weight:bold;
+nav li {
   margin-bottom: 1em;
   margin-left: 1em;
 }
@@ -172,7 +257,7 @@ nav a:hover {
 
   header {
     display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    grid-template-columns: 1fr auto minmax(700px, 3fr) 1fr;
   }
 
   .logo {
@@ -243,23 +328,15 @@ nav a:hover {
   display: inline-block;
 }
 
-/* Green */
-.success {
-  color: white;
-  border: 2px solid #4169e1
-}
 
-.main {
-  text-align: center;
-}
 
 footer {
   position: sticky;
-  margin-top: 5%;
+  margin-top: 10%;
   width: 100%;
   background: #4169e1;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 
 .footerText {
@@ -287,6 +364,8 @@ textarea {
 }
 
 @charset "UTF-8";
+
+
 
 /* everything below is css for social media buttons for both under the contact form and the footer*/
 .svg-inline--fa {
@@ -317,8 +396,7 @@ textarea {
   margin-bottom: 0.25rem;
 }
 
-.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
-  /* Adds animations to social media buttons*/
+.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {/* Adds animations to social media buttons*/
   -webkit-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
@@ -347,7 +425,9 @@ textarea {
   background: #fefefe;
   border-color: #55acee;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .rounded-social-buttons .social-button.linkedin {
   background: #007bb5;
 }
@@ -371,128 +451,56 @@ textarea {
   background: #fefefe;
   border-color: #125688;
 }
+.activePage{background-color: #4169e1; color:white}
 
 * {
   box-sizing: border-box;
 }
-
 .image {
   float: middle;
   max-width: 40%;
   height: auto
 }
+.content {
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-right: 25%;
+    background-color:#4169e1;
 
-/* Add styles to 'container' class */
-.container {
-  padding: 12px 24px 24px 24px;
-  margin: 0% 25% 0%;
-  background: #4169e1;
-  border-radius: 4px;
-  color: white
+    overflow: hidden;
+    color:white
 }
 
-.contactSocial {
-  margin-top: 2%
+.carousel-inner img {
+  margin: auto;
 }
-
-/* Add styles to 'label' selector */
-label {
-  font-size: 0.85em;
-  margin-left: 12px;
-  color: white
-}
-
-/* */
-/* Add styles to 'input' and 'textarea' selectors */
-input[type=text], input[type=email], textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-/* Add styles to show 'focus' of selector */
-input[type=text]:focus, input[type=email]:focus, textarea:focus {
-  border: 1px solid green;
-}
-
-/* Add styles to the submit button */
-input[type=submit] {
-  color: #4169e1;
-  background: #FFFF;
-  margin: 0 auto;
-  outline: 0;
-  border: 0;
-  padding: 12px 24px;
-  border-radius: 4px;
-  transition: all ease-in-out 0.1s;
-  position: relative;
-  display: inline-block;
-  text-align: center;
-}
-
-/* Add styles for 'focus' property */
-input[type=submit]:focus {
-  background: #4169e1;
-  color: whitesmoke;
-}
-
-/* Style 'hover' property */
-input[type=submit]:hover {
-  background: #2196F3;
-  color: white
-}
-
-/* Align items to center of the 'div' with the class 'center' */
-.center {
-  text-align: center;
-}
+.carousel { width:100%;padding: 0;align-items:center;margin: auto; margin-top: 0%;background-color: #fff;}
+.carouselcont{margin-top: 2%;background-color: #fff}
 @media screen and (max-width: 1170px) {nav a {
   padding: 0px;
 
 }
 }
-/* Slideshow container */
-@media screen and (max-width: 800px) {
-
-  /* This css activates when screenwidth is less than 800 pixels wide */
-  .contact {
-    margin-top: 25%
-  }
-  nav a {
-    padding: 10px;
-    padding-right: 70%;
-    color: #4169e1;
-    text-decoration: none;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    opacity: 0;
-    transition: opacity 150ms ease-in-out;
-  }.
-  p {
-    text-align: center;
-    color: BLACK;
-    margin: 0% 0% 0%;
-  }
-
-
-
-  .container {
-    padding: 12px 24px 24px 24px;
-    margin: 0% 0% 0%;
-    background: #4169e1;
-    border-radius: 4px;
-    margin-bottom: 15%;
-  }
-
-  iframe {
-    height: 60%;
-    width: 60%
-  }
+@media screen and (max-width: 1920px) {
+  .carousel { width:100%; align-items:center;margin: auto; margin-top: 2%;background-color: #fff;}}
+@media screen and (max-width: 800px) {/* This css activates when screenwidth is less than 800 pixels wide */
+.carousel { width:100%; align-items:center;margin: auto; margin-top: 2%;background-color: #fff}
+nav a {
+  padding: 10px;
+  padding-right: 70%;
+  color: #4169e1;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}.contactForm {
+  padding: 12px 24px 24px 24px;
+  margin: 2% 0% 0%;
+  background: #4169e1;
+  border-radius: 4px;
+  color: white
+}
 
   p {
     text-align: center;
@@ -500,19 +508,28 @@ input[type=submit]:hover {
     margin: 0% 0% 0%;
   }
 
-  .image {
-    float: middle;
-    max-width: 30%;
-    height: auto
-  }
-  @media screen and (max-width: 430px){
-  nav a {
-    padding: 0px;
-    padding-right: 70%;
-    color: #4169e1;
-    text-decoration: none;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    opacity: 0;
-    transition: opacity 150ms ease-in-out;
-  }}
+h1{margin-top: 15%}
+p{margin: 0% 0% 0%}
+
+
+@media screen and (max-width: 430px){
+nav a {
+  padding: 0px;
+  padding-right: 70%;
+  color: #4169e1;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 620px){
+.title{margin-top: 25%}}
