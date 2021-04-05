@@ -314,10 +314,7 @@ footer {
   padding-bottom: 30px;
 }
 
-.mobileBuy {
-  display: none;
-  margin-top: 20px
-}
+
 
 .footerText {
   color: #fff;
@@ -449,6 +446,11 @@ textarea {
     text-transform: uppercase;
     opacity: 0;
     transition: opacity 150ms ease-in-out;
+  }
+  .image {
+    float: middle;
+    max-width: 30%;
+    height: auto
   }
   .carousel {
     width: 100%;

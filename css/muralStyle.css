@@ -494,7 +494,12 @@ nav a {
   text-transform: uppercase;
   opacity: 0;
   transition: opacity 150ms ease-in-out;
-}.contactForm {
+}  .image {
+    float: middle;
+    max-width: 30%;
+    height: auto
+  }
+.contactForm {
   padding: 12px 24px 24px 24px;
   margin: 2% 0% 0%;
   background: #4169e1;
