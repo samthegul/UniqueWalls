@@ -437,6 +437,7 @@ textarea {
 /* Slideshow container */
 
 @media screen and (max-width: 800px) {
+.about{margin-top: 15%}
   nav a {
     padding: 10px;
     padding-right: 70%;
@@ -466,9 +467,6 @@ textarea {
     margin: 0% 0% 0%;
   }
 
-  .about {
-    margin-top: 10px
-  }
 
   .welcome {
     margin-top: 30%
