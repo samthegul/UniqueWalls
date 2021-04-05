@@ -533,3 +533,5 @@ nav a {
 
 @media screen and (max-width: 620px){
 .title{margin-top: 25%}}
+@media screen and (max-width: 420px){
+.title{margin-top: 30%}}
