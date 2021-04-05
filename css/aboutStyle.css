@@ -461,7 +461,7 @@ textarea {
 @media screen and (max-width: 430px){
 nav a {
   padding: 0px;
-  padding-right: 60%;
+  padding-right: 50%;
   color: #4169e1;
   text-decoration: none;
   font-size: 1.2rem;
