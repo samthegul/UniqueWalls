@@ -520,7 +520,8 @@ p{margin: 0% 0% 0%}
 @media screen and (max-width: 430px){
 nav a {
   padding: 0px;
-  padding-right: 70%;
+
+  padding-right: 50%;
   color: #4169e1;
   text-decoration: none;
   font-size: 1.2rem;
@@ -528,8 +529,18 @@ nav a {
   opacity: 0;
   transition: opacity 150ms ease-in-out;
 }}
+@media screen and (max-width: 300px){
+nav a {
+  padding: 0px;
 
-
+  padding-right: 40%;
+  color: #4169e1;
+  text-decoration: none;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}}
 
 
 
