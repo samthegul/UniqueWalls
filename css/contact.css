@@ -1,48 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
-.shopButtons{text-align: center;
-margin-top: 5%}
-table {
-  width: 80%;
-  border-collapse: collapse;
-  border-spacing: 0;
-  margin-left: 10%;
-  margin-right:10%;
-  border: 1px solid #ddd;
-}
-
-th, td {
-  text-align: center;
-  padding: 16px;
-}
-
-th:first-child, td:first-child {
-  text-align: left;
-}
-
-tr:nth-child(even) {
-  background-color: #f2f2f2
-}
-.fa-check {
-  color: green;
-}
-
-.fa-remove {
-  color: red;
-}
-:root {
-  --white-light: rgba(255, 255, 255);
-  --alice-blue: #f8f9fa;
-  --carribean-green: #40c9a2;
-  --gray: #ededed;
-  --royalBlue: #4169e1;
-}
-
-p {
-  font-weight: 600
-}
-
-
-.contactForm {
+/* Add styles to 'container' class */
+.formContainer {
   text-align: center;
   padding: 12px 24px 24px 24px;
   margin: 2% 25% 0%;
@@ -50,6 +7,7 @@ p {
   border-radius: 4px;
   color: white
 }
+
 
 /* Add styles to 'label' selector */
 label {
@@ -78,7 +36,6 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 
 /* Add styles to the submit button */
 input[type=submit] {
-
   color: #4169e1;
   background: #FFFF;
   margin: 0 auto;
@@ -104,264 +61,10 @@ input[type=submit]:hover {
   color: white
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
-}
-.carousel-inner img {
-  margin: auto;
-}
-.carousel {
-  width: 100%;
-  padding: 0;
-  align-items: center;
-  margin: auto;
-  margin-top: 0%;
-  background-color: #fff;
-}
-
-.carouselcont {
-  margin-top: 2%;
-  background-color: #fff
-}
-.shopify {
-  margin:0% 42.5% 0%;
-  width: 15%;
-  border: 5px solid #95bf47;
-  border-radius: 5px;
-}
-
-.etsy {
-  margin:0% 45% 0%;
-  width: 10%;
-  border: 5px solid #f45800;
-  border-radius: 5px
-}
-
-header {
-  border-bottom: 2px solid #4169e1
-}
-
-.lg-title,
-.md-title,
-.sm-title {
-  font-family: 'Roboto', sans-serif;
+/* Align items to center of the 'div' with the class 'center' */
+.center {
   text-align: center;
-  text-transform: capitalize;
 }
-
-.lg-title {
-  margin-top: 3%;
-  font-size: 2.5rem;
-  font-weight: 500;
-  text-align: center;
-  padding: 1.3rem 0;
-  opacity: 0.9;
-  padding-top: 8.75%;
-}
-
-.md-title {
-  font-size: 2rem;
-  font-family: 'Roboto', sans-serif;
-}
-
-.sm-title {
-  font-weight: 300;
-  font-size: 1rem;
-  text-transform: uppercase;
-}
-
-.text-light {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-/* product section */
-.products {
-;
-  padding: 3.2rem 0;
-}
-
-.products . {
-  text-align: center;
-  width: 70%;
-  margin: 0.9rem auto;
-}
-
-.product {
-  margin: 2rem;
-  position: relative;
-  border: 2px solid var(--royalBlue);
-  border-radius: 5px;
-}
-
-.product-content {
-  background: white;
-  padding: 3rem 0.5rem 2rem 0.5rem;
-  cursor: pointer;
-}
-
-.product-img {
-  background: var(--white-light);
-  box-shadow: 0 0 20px 10px var(--white-light);
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-  border-radius: 50%;
-  transition: background 0.5s ease;
-}
-
-.product-btns {
-  display: flex;
-  justify-content: center;
-  margin-top: 1.4rem;
-  opacity: 0;
-  transition: opacity 0.6s ease;
-}
-
-.btn-cart, .btn-buy {
-  background: transparent;
-  border: 1px solid black;
-  padding: 0.8rem 0;
-  width: 125px;
-  font-family: inherit;
-  text-transform: uppercase;
-  cursor: pointer;
-  border: none;
-  transition: all 0.6s ease;
-}
-
-@media screen and (min-width: 800px) {
-  .btn-buy {
-    background: white;
-  }
-}
-
-.btn-buy:hover {
-  background: var(--royalBlue);
-  color: #fff;
-}
-
-.product-info {
-  background: white;
-  padding: 2rem;
-}
-
-.product-info-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.rating span {
-  color: var(--royalBlue);
-}
-
-.product-name {
-  color: black;
-  display: block;
-  text-decoration: none;
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.product-price {
-  padding-top: 0.6rem;
-  padding-right: 0.6rem;
-  display: inline-block;
-}
-
-pr .product-price:first-of-type {
-  text-decoration: line-through;
-  color: var(--royalBlue);
-}
-
-.product-img img {
-  transition: transform 0.6s ease;
-  width: 100%;
-  display: block;
-}
-
-.product:hover .product-img img {
-  transform: scale(1.1);
-  width: 100%;
-  display: block;
-}
-
-.product:hover .product-img {
-  background: var(--royalBlue);
-}
-
-.product:hover .product-btns {
-  opacity: 1;
-}
-
-/* product collection */
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  height: 50vh;
-  padding: 2rem 1.5rem 3.2rem;
-  margin: 5px;
-}
-
-.btn-dark {
-  background: black;
-  color: white;
-  outline: 0;
-  border-radius: 25px;
-  padding: 0.7rem 1rem;
-  border: 0;
-  margin-top: 1rem;
-  cursor: pointer;
-  transition: all 0.6s ease;
-  font-size: 1rem;
-  font-family: inherit;
-}
-
-.btn-dark:hover {
-  background: var(--royalBlue);
-}
-
-/* Media Queries */
-@media screen and (min-width: 992px) {
-  .product-items {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .product-items {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .product {
-    margin-right: 1rem;
-    margin-left: 1rem;
-  }
-
-  .products .text-light {
-    width: 50%;
-  }
-}
-
-@media screen and (min-width: 1336px) {
-  .product-items {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .flex {
-    height: 60vh;
-  }
-}
-
-
-
 /* Please ❤ this if you like it! */
 
 
@@ -480,7 +183,7 @@ body{
 }
 .nav-link{
 	color: #4169e1 !important;
-	font-weight: 500;
+	font-weight: 600;
     transition: all 200ms linear;
 }
 .nav-item:hover .nav-link{
@@ -769,19 +472,6 @@ body.hero-anime #switch{
 
 @media (max-width: 800px) {
 
-  .shopify {
-    margin:0% 30% 0%;
-    width: 40%;
-    border: 5px solid #95bf47;
-    border-radius: 5px;
-  }
-
-  .etsy {
-    margin:0% 30% 0%;
-    width: 40%;
-    border: 5px solid #f45800;
-    border-radius: 5px
-  }
 	h1{
 		font-size: 38px;
 	}
@@ -842,11 +532,11 @@ body.hero-anime #switch{
 /* #Link to page
 ================================================== */
 
-@media (max-width: 800px){
-  .products{padding-top: 20%}
-  .contactForm {
+@media (max-width: 800px) {
+  .contact{padding-top: 20%}
+  .formContainer {
     padding: 12px 24px 24px 24px;
-    margin: 2% 0% 0%;
+    margin: 4% 0% 0%;
     background: #4169e1;
     border-radius: 4px;
     color: white
